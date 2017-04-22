@@ -1,5 +1,8 @@
-# test coverage for  [fortune (v5.1.0)](http://fortune.js.org)  [![npm package](https://img.shields.io/npm/v/npmtest-fortune.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-fortune) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-fortune.svg)](https://travis-ci.org/npmtest/node-npmtest-fortune)
-#### Database abstraction layer for data-driven applications.
+# npmtest-fortune
+
+#### basic test-coverage for  [fortune (v5.2.1)](http://fortune.js.org)  [![npm package](https://img.shields.io/npm/v/npmtest-fortune.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-fortune) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-fortune.svg)](https://travis-ci.org/npmtest/node-npmtest-fortune)
+
+#### Database abstraction layer that implements common features for Node.js and web browsers.
 
 [![NPM](https://nodei.co/npm/fortune.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/fortune)
 
@@ -37,43 +40,43 @@
     },
     "dependencies": {
         "error-class": "^2.0.1",
-        "event-lite": "^0.1.1",
-        "tapdance": "^5.0.3"
+        "event-lite": "^0.1.1"
     },
-    "description": "Database abstraction layer for data-driven applications.",
+    "description": "Database abstraction layer that implements common features for Node.js and web browsers.",
     "devDependencies": {
         "@tap-format/dot": "^0.2.0",
-        "browserify": "^13.3.0",
+        "bluebird": "^3.5.0",
+        "browserify": "^14.3.0",
         "chalk": "^1.1.3",
         "cssnano": "^3.10.0",
         "doc-tree": "^0.12.2",
-        "eslint": "^3.13.0",
+        "eslint": "^3.19.0",
         "eslint-config-boss": "^1.0.5",
-        "fortune-http": "^1.0.3",
-        "fortune-ws": "^1.0.2",
-        "highlight.js": "^9.9.0",
-        "html-minifier": "^3.2.3",
-        "inflection": "^1.10.0",
+        "fortune-http": "^1.0.7",
+        "fortune-ws": "^1.0.3",
+        "highlight.js": "^9.11.0",
+        "html-minifier": "^3.4.3",
+        "inflection": "^1.12.0",
         "istanbul": "^0.4.5",
         "marked": "^0.3.6",
         "mkdirp": "^0.5.1",
         "mustache": "^2.3.0",
-        "normalize.css": "^5.0.0",
-        "postcss": "^5.2.9",
-        "postcss-cssnext": "^2.9.0",
-        "postcss-import": "^9.0.0",
-        "rimraf": "^2.5.4",
-        "tapdance": "^5.0.2",
-        "tape-run": "^2.1.5",
-        "uglify-js": "^2.7.5"
+        "normalize.css": "^6.0.0",
+        "postcss": "^5.2.17",
+        "postcss-cssnext": "^2.10.0",
+        "postcss-import": "^9.1.0",
+        "rimraf": "^2.6.1",
+        "tapdance": "^5.0.4",
+        "tape-run": "^3.0.0",
+        "uglify-js": "^2.8.22"
     },
     "directories": {},
     "dist": {
-        "shasum": "f501cdb806fb383938d5885d2e900b8589db120d",
-        "tarball": "https://registry.npmjs.org/fortune/-/fortune-5.1.0.tgz"
+        "shasum": "9e8fc8bfec2f0fabcac9e98ca9b6759fb9395379",
+        "tarball": "https://registry.npmjs.org/fortune/-/fortune-5.2.1.tgz"
     },
     "engines": {
-        "node": ">=4.6"
+        "node": ">=6.10"
     },
     "eslintConfig": {
         "extends": "boss/es5"
@@ -84,7 +87,7 @@
         "test/",
         "LICENSE"
     ],
-    "gitHead": "c7f59b7b23260263de1c51167fbfeab33586ad34",
+    "gitHead": "c0e99cac69b0e81f87b7e0b79bd83e992f096c60",
     "homepage": "http://fortune.js.org",
     "keywords": [
         "database",
@@ -97,10 +100,10 @@
     "main": "lib/index.js",
     "maintainers": [
         {
-            "name": "jacksongariety"
+            "name": "daliwali"
         },
         {
-            "name": "sapeien"
+            "name": "jacksongariety"
         }
     ],
     "name": "fortune",
@@ -123,7 +126,8 @@
         "test:browser": "browserify test/browser.js | tape-run | tf-dot",
         "test:server": "node test | tf-dot"
     },
-    "version": "5.1.0"
+    "version": "5.2.1",
+    "bin": {}
 }
 ```
 
